@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Bell, Package, User as UserIcon } from 'lucide-react';
 import AuthDialog from '@/components/AuthDialog';
 import Dashboard from '@/components/Dashboard';
 import { User } from '@/types/User';
@@ -115,7 +116,7 @@ const Index = () => {
 
             <Card className="p-6 border-purple-200 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                <User className="w-6 h-6 text-purple-600" />
+                <UserIcon className="w-6 h-6 text-purple-600" />
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-3">Community Support</h4>
               <p className="text-gray-600">
@@ -154,8 +155,5 @@ const Index = () => {
     </div>
   );
 };
-
-// Import icons at the top with other imports
-import { Bell, Package, User } from 'lucide-react';
 
 export default Index;
